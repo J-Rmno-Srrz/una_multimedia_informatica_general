@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Romano - ARTZ Multimedia</title>
+  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar navbar-expand-lg bg-dark navbar-dark px-4 py-3">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+      <span>ARTZ Multimedia</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="../index.html#sobre-nosotros">Sobre Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#servicios">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#equipo">Equipo</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+  
+
+
+   <!-- contenedor principal -->
+<div class="contenedor-principal">
+        <!-- Main Image -->
+        <section class="main-image">
+            <img src="../imagenes/img romano/romano-5.jpg" alt="Imagen principal">
+            <div class="banner-text">
+            <h2>Julieta Romano Serrizuela</h2>
+            <p>Artista orientada a la producción audiovisual y multimedial.</p>
+            </div>
+        </section>
+        
+        
+        <!-- ===== SOBRE MÍ ===== -->
+        <section class="container py-5" id="sobre-mi">
+            <h2 class="text-center mb-4">Sobre Mí</h2>
+            <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="../imagenes/img romano/romano-a.jpg" alt="Foto del artista" class="rounded-circle w-75 mb-3">
+            </div>
+            <div class="col-md-8">
+                <p class="lead">Estudiante de Artes Multimediales, en la UNA, con formación en lenguaje audiovisual y producción.
+                    Me oriento a la ilustración digital, con un interes particular por el Concept Art y el Storyboard.
+                    También, poseo habilidades organizativas y conocimientos prácticos que me capacitan como Asistente de Producción, 
+                    lista para apoyar proyectos creativos desde la conceptualización de la idea hasta su ejecución.
+                </p>
+            </div>
+            </div>
+        </section>
+
+
+
+            <!-- GALERIA -->
+        <div> 
+        
+        <main>
+            <section id="perfil-equipo" class="py-5">
+                <div class="container">
+                    <h1 class="text-center mb-4">Galeria de Trabajos</h1>
+                    <p class="lead text-center">Concept Art y Storyboard.</p>
+                    
+                    <div class="bio my-5">
+                        <h3>Descripciones</h3>
+                        <h5>Proyecto: Adaptación interactiva y no lineal de la novela corta "Look Back" (Tatsuki Fujimoto).</h5>
+                        <p>
+                            Basado en la novela corta (o manga one-shot) "Look Back" de Tatsuki Fujimoto, 
+                            este proyecto se centra en el diseño y desarrollo de un relato interactivo no
+                            lineal que aplica los principios de la hipermedia.
+                        </p>
+                        <p>El proyecto mantiene el mismo nombre que la novela de Fujimoto, "Look Back", y se encuentra disponible
+                            en la plataforma
+                            <a href="https://jrssrz.itch.io/tp1-look-back-2025" target="_blank" rel="noopener noreferrer">itch.io</a>
+                            .
+                        </p>
+                        <p>La experiencia incorpora una combinación de al menos tres medios: imagen
+                            estática, audio (música y efectos sonoros) y código interactivo,
+                            integrando los conceptos de inmersión, actuación y participación activa del usuario.
+                        </p>
+                        <p>
+                           El proyecto hipermedial fue desarrollado utilizando el motor Ren'Py, especializado
+                            en la creación de novelas visuales y simulaciones interactivas. Los visuales
+                            fueron creados mediante software de ilustración digital como Krita y Clip Studio Paint,
+                            empleando técnicas de ilustración y arte rasterizado. 
+                        </p>
+
+                        <h5>"Enterrando a Susy Legrand":</h5>
+                        <p>
+                            ASCII ART realizado para el primer trabajo practico de informatica general, catedra Tirigall.
+                        </p>
+                    </div>
+                    <!-- ARTICLE-->
+                        <article id="galeria-trabajos">
+                            <h2 class="text-center mb-5">Galería de Trabajos</h2>
+                            
+                            <div id="contenedor-galeria-romano" class="galeria-js-container">
+                                <div class="text-center">
+                                    <img id="imagen-galeria-display" src="../assets/images/placeholder.jpg" alt="Imagen actual de la galería" class="img-fluid" style="max-height: 500px;">
+                                </div>
+                                
+                            <!-- DESCRIPCIÓN -->
+                                <div class="mt-4 p-3 bg-light border rounded">
+                                    <p id="descripcion-trabajo" class="lead mb-0 text-center">
+                                        Aquí aparecerá una breve descripción del trabajo.
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3">
+                                </div>
+                            <!-- FIN DE LA DESCRIPCIÓN-->
+
+                                <div class="d-flex justify-content-between mt-3">
+                                    <button id="btn-anterior" class="btn btn-dark">◀ Anterior</button>
+                                    <button id="btn-siguiente" class="btn btn-dark">Siguiente ▶</button>
+                                </div>
+
+                            </div>
+
+
+
+                        </article>
+
+                    <!-- FIN DE ARTICLE-->
+                    </div>
+            </section>
+        </main>
+
+            <footer class="text-center py-3 bg-secondary text-white">
+            </footer>
+        </div>
+
+        <!-- ===== fin de galeria ===== -->
+        
+
+</div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="text-center py-3 bg-secondary text-white">
+    <p class="mb-0">© 2025 ARTZ Multimedia - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
