@@ -1,5 +1,5 @@
 // -----------------------------------------------------------
-// FUNCIÓN PRINCIPAL DE LA GALERÍA (No cambia)
+// FUNCIÓN PRINCIPAL DE LA GALERÍA 
 // -----------------------------------------------------------
 function iniciarGaleria(imagenId, anteriorBtnId, siguienteBtnId, imagenes, descripcionId) {
     let indiceActual = 0;
@@ -43,7 +43,7 @@ function iniciarGaleria(imagenId, anteriorBtnId, siguienteBtnId, imagenes, descr
 }
 
 // -----------------------------------------------------------
-// ARRAYS DE IMÁGENES (Debes verificar las rutas: '../imagenes/...')
+// ARRAYS DE IMÁGENES 
 // -----------------------------------------------------------
 
 const imagenesRomano = [
@@ -85,4 +85,5 @@ if (tituloPagina.includes('Romano')) {
 } else if (tituloPagina.includes('Zambrano')) {
     // Si el título contiene la palabra "Zambrano", inicia la galería de Zambrano
     iniciarGaleria('imagen-galeria-display', 'btn-anterior', 'btn-siguiente', imagenesZambrano, 'descripcion-trabajo');
+
 }
