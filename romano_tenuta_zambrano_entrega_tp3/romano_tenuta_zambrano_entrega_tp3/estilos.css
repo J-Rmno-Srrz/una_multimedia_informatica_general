@@ -1,10 +1,6 @@
 /* ---------------------------------------------------- */
-/* 1. OBJETIVO: Incorporar Webfonts Locales (Si tienes fuentes) */
+/* 1. Incorporar Webfonts Locales                       */
 /* ---------------------------------------------------- */
-
-/* Ejemplo de cómo usar una fuente local. 
-   Asegúrate de que la ruta '../assets/fonts/MiFuente.woff' sea correcta 
-   y corresponda a la ubicación real de tu fuente. */
    
 @font-face {
     font-family: 'MiFuenteCustom'; /* Nombre que usarás para aplicar la fuente */
@@ -15,7 +11,7 @@
 }
 
 /* ---------------------------------------------------- */
-/* 2. OBJETIVO: Centrar Contenido (Fondo Blanco, Bordes Grises) */
+/* 2. Centrar Contenido (Fondo Blanco, Bordes Grises)   */
 /* ---------------------------------------------------- */
 
 body {
@@ -25,7 +21,7 @@ body {
 }
 
 /* ---------------------------------------------------- */
-/* DIV que contiene el contenido de la empresa */
+/* DIV contenido de la empresa                          */
 /* ---------------------------------------------------- */
 .contenedor-principal {
     /* Fondo BLANCO para el contenido */
@@ -41,42 +37,7 @@ body {
 }
 
 /* ---------------------------------------------------- */
-/* 3. OBJETIVO: Resolver Menús (Usando Flexbox, aunque estés usando Bootstrap) */
-/* ---------------------------------------------------- */
-
-/* NOTA: Para cumplir el objetivo de la facultad usando CSS puro, 
-   DEBERÍAS eliminar las clases de Bootstrap (navbar, navbar-expand-lg, etc.) 
-   y aplicar estos estilos directamente a tu <header> y <nav> */
-
-/* Ejemplo de estilos que aplicarías si NO usaras Bootstrap: */
-/*
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #343a40; 
-    padding: 1rem;
-}
-.menu-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex; 
-}
-.menu-nav li a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    display: block;
-}
-.menu-nav li a:hover {
-    background-color: #555;
-}
-    */
-
-
-
-/* ---------------------------------------------------- */
-/* 4. CORRECCIÓN: Evitar Desbordamiento de Main Image */
+/* Main Image */
 /* ---------------------------------------------------- */
 
 .main-image {
@@ -111,17 +72,6 @@ header {
 }
 
 /* ============= AGREGADO PARA CENTRAR EL TEXTO ================ */ 
-/* === funciona en cualquier tamaño, es responsive. Resuelto === */
-/* Agregando esto al anterior .banner-text se arregla*/
-/*
-.banner-text {
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 80%;
-}
-  */
 
 .banner-text h2 {
   font-size: 2.5rem;
@@ -133,7 +83,7 @@ header {
 }
 
 /* ---------------------------------------------------- */
-/* 5. Estilos Generales y Responsividad */
+/*  Estilos Generales y Responsividad                   */
 /* ---------------------------------------------------- */
 
 /* Ajuste para que las imágenes de Bootstrap se comporten igual */
@@ -143,55 +93,8 @@ header {
 }
 
 /* ---------------------------------------------------- */
-/* CODIGO ANTERIOR */
-/* ---------------------------------------------------- */
-
-/* ========== CONFIGURACIÓN GENERAL ========== */
-/*
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
-  */
-
-/* ---------------------------------------------------- */
-/* ===================== HEADER  ====================== */
-/* ---------------------------------------------------- */
-/* ========== HEADER ========== */
-/*
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #111;
-  color: #fff;
-  padding: 15px 30px;
-  flex-wrap: wrap;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo img {
-  width: 50px;
-  height: auto;
-}
-*/
-
-/* ---------------------------------------------------- */
 /* ================= MENU DE NAVEGACIÓN =============== */
 /* ---------------------------------------------------- */
-/* ========== MENÚ ========== */
 
 .menu ul {
   list-style: none;
@@ -246,3 +149,4 @@ header {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
