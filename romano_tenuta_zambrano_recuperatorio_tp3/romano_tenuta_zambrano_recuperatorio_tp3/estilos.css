@@ -1,0 +1,187 @@
+/* ---------------------------------------------------- */
+/* 1. OBJETIVO: Incorporar Webfonts Locales (Si tienes fuentes) */
+/* ---------------------------------------------------- */
+
+/* Ejemplo de cómo usar una fuente local. 
+   Asegúrate de que la ruta '../assets/fonts/MiFuente.woff' sea correcta 
+   y corresponda a la ubicación real de tu fuente. */
+   
+@font-face {
+    font-family: 'MiFuenteCustom'; /* Nombre que usarás para aplicar la fuente */
+    src: url('assets/fonts/MiFuente.woff') format('woff'),
+         url('assets/fonts/MiFuente.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ---------------------------------------------------- */
+/* 2. OBJETIVO: Centrar Contenido (Fondo Blanco, Bordes Grises) */
+/* ---------------------------------------------------- */
+
+body {
+    /* Fondo GRIS para los bordes que rodean el contenido centrado */
+    background-color: #e9ecef; /* Un gris muy suave, similar al 'bg-light' de Bootstrap */
+    font-family: 'MiFuenteCustom', sans-serif; /* Aplicamos la webfont */
+}
+
+/* ---------------------------------------------------- */
+/* DIV que contiene el contenido de la empresa */
+/* ---------------------------------------------------- */
+.contenedor-principal {
+    /* Fondo BLANCO para el contenido */
+    background-color: white; 
+    
+    /* Propiedad CLAVE para CENTRAR el bloque principal */
+    width: 95%; /* Porcentaje de ancho en pantallas pequeñas */
+    max-width: 1200px; /* Ancho máximo en pantallas grandes */
+    margin: 0 auto; /* Centra el bloque horizontalmente */
+    
+    /* Opcional: una ligera sombra para que se vea más separado del fondo gris */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ---------------------------------------------------- */
+/* 4. CORRECCIÓN: Evitar Desbordamiento de Main Image */
+/* ---------------------------------------------------- */
+
+.main-image {
+    /* Es mejor limitar la altura del contenedor, no de la imagen misma */
+    height: 400px; 
+    position: relative; 
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga */
+}
+
+.main-image img {
+    /* Regla CLAVE: La imagen nunca excede el ancho de su contenedor */
+    width: 100%;
+    /* Asegura que la imagen cubra todo el espacio sin distorsionarse */
+    height: 100%;
+    object-fit: cover; /* Recorta si es necesario, pero cubre el área */
+    display: block;
+}
+
+.banner-text {
+    /* Estilos para que el texto se vea bien sobre la imagen */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrado perfecto con translate */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para legibilidad */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+
+.banner-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+}
+
+/* ---------------------------------------------------- */
+/* 5. Estilos Generales y Responsividad */
+/* ---------------------------------------------------- */
+
+/* Ajuste para que las imágenes de Bootstrap se comporten igual */
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ---------------------------------------------------- */
+/* ================= MENU DE NAVEGACIÓN =============== */
+/* ---------------------------------------------------- */
+/* ========== MENÚ ========== */
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu ul li {
+  position: relative;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.menu a:hover {
+  background: #444;
+  transition: 0.3s;
+}
+
+/* Submenú */
+.submenu .dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #222;
+  list-style: none;
+  min-width: 180px;
+}
+
+.submenu:hover .dropdown {
+  display: block;
+}
+
+.dropdown li a {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+
+/* ---------------------------------------------------- */
+/* ==============NUESTROS SERVICIOS  ================== */
+/* ---------------------------------------------------- */
+.servicio {
+  margin: 15px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+/* Título del formulario */
+.contact-form h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 8px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Estilo de los labels */
+.contact-form label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #ffffff;
+}
+
+.contact-form input.error,
+.contact-form textarea.error {
+    border-color: rgb(207, 67, 67);
+}
+
+.error-message {
+    color: rgb(160, 55, 55);
+    font-size: 0.9em;
+    margin: 1px 0 10px 0;
+}
